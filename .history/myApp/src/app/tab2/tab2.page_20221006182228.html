@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Las mejores frases de Chuck Norris
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="container">
+  <img src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png" class="image">
+  <div class="frase"> {{frase.value}} </div>
+  <ion-button fill="outline" (click)="getData()" class="btn">Nueva frase</ion-button>
+</ion-content>

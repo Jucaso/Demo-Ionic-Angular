@@ -1,0 +1,23 @@
+.container{
+
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.frase{
+    text-align: center;
+    margin: 10px;
+}
+
+.image{
+    margin-top: 10px;
+    width: 50%;
+    height: 50%;
+}
+
+.btn.container{
+    position: absolute; 
+    background: red;
+    
+}

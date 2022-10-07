@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalles del producto</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref=""></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="producto">
+    <ion-card>
+      <img src="{{producto.category.image}}" />
+      <ion-card-header>
+        <ion-card-subtitle>{{producto.category.name}}</ion-card-subtitle>
+        <ion-card-title>{{producto.title}}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        {{producto.description}}
+      </ion-card-content>
+
+      <div class="btn">
+        <ion-button fill="outline" class="btn">Comprar</ion-button>
+      </div>
+    </ion-card>
+  </div>
+  
+</ion-content>
